@@ -17,7 +17,7 @@ int main(void) {
     GPIO_PORTF_DEN_R |= RED_LED;
 
 
-    STRELOAD = (80000 * 1000) - 1;
+    STRELOAD = 0xF42400;
     STCTRL = CLK_SRC;
 
     while (1) {
